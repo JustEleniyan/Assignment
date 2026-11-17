@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="radn1">
+    <input type="text" id="radn2">
+    <button onclick="generateRandomNumber()">Generate</button>
+</body>
+
+</html>
+<script>
+    // let num1 = 20
+    // let num2 = 5
+
+    // console.log(num1 * num2);
+    // console.log(num1 + num2);
+    // console.log(num1 - num2);
+    // console.log(num1 / num2);
+    // console.log(num1 % num2);
+    // console.log(num1 ** num2);
+
+    let number1 = document.getElementById('radn1')
+    let number2 = document.getElementById('radn2')
+
+    function generateRandomNumber(){
+
+        let number1 = radn1.value
+        let number2 = radn2.value
+
+        // let randomNumber = (Math.random()*9);
+        // let finalRandomNumber = randomNumber + 2;
+
+        // console.log(Math.floor(finalRandomNumber));
+
+        // let number = 10
+
+
+
+        let maxNo = 10
+        let minNo = 2
+
+        number1 = minNo
+        number2 = maxNo
+                                                                                        
+        let diff = maxNo - minNo;
+        let randomNumber = (Math.random() * diff)
+
+        randomNumber = Math.ceil(randomNumber)
+        randomNumber = randomNumber + 2
+        let randomNoFormula = Math.ceil(Math.random() * (maxNo - minNo)) + minNo;
+
+
+        console.log(randomNoFormula);
+
+    } 
+</script>

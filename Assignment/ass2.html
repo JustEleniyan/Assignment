@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Word</title>
+</head>
+<body>
+    <input type="text" id="inputField">
+    <button onclick="splitWord()">Submit</button>
+    <div id="ress"></div>
+
+
+</body>
+</html>
+<script>
+    let myInputField = document.getElementById('inputField')
+    let result = document.getElementById('ress')
+
+    function splitWord() {
+        let word = myInputField.value
+        let inputLength = word.length
+        let half = Math.floor(inputLength / 2)
+
+
+        let first = word.substring(0,half)
+        let Second = word.substring(half)
+
+        result.innerHTML = first+ ' + ' +Second
+        
+    }
+</script>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="one" type="text">
+    <input id="two" type="text">
+    <button onclick="derive()">Submit</button>
+
+    <p id="output"></p>
+</body>
+
+</html>
+<script>
+    let field1 = document.getElementById('one')
+    let field2 = document.getElementById('two')
+    let OUTPUT = document.getElementById('output')
+
+    function derive() {
+        let ONE = +field1.value
+        let TWO = +field2.value
+
+
+        if (ONE > TWO) {
+            OUTPUT.innerHTML = `${ONE} is greater than ${TWO}`
+        }
+        else if (TWO == ONE) {
+            OUTPUT.innerHTML = `${ONE} is lesser than ${TWO}`
+        }
+            
+
+    }
+
+
+
+    //if else, switch, tenary
+
+    if (5 > 3) {
+        console.log('This code 1 ran sucessfully');
+    }
+
+    if (3 > 5 || 7 < 6) {
+        console.log('This code 2 ran sucessfully');
+    }
+
+    if (5 > 3) {
+        console.log('Five is greater than three');
+    } else {
+        console.log('Five is less than three');
+
+    }
+    if (3 > 5) {
+        console.log('Three is greater than Five');
+    } else {
+        console.log('Three is less than Five');
+
+    }
+</script>
